@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/laptop2.gif";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import resumePdf from "../assets/pdf/Ben-Resume-2023.pdf";
@@ -46,21 +46,19 @@ function Banner() {
   };
 
   return (
-    <>
-      <section className="banner" id="home">
-        <Container>
+    <div className="bannerImg">
+      <section className="banner " id="home">
+        <Container >
           <Row className="align-items-center">
             <Col xs={12} md={6} xl={7}>
-              <TrackVisibility>
-                {({ isVisible }) => (
+              
                   <div
-                    className={
-                      isVisible ? "animated__animated animate__pulse" : ""
-                    }
+                    className="bannerContainer"
+                    
                   >
                     <span className="tagline">Welcome to my Portfolio</span>
                     <h1>
-                      {`Hi I'm plaindemon`}
+                      {`Hi I'm Benjamin`}
                       <br></br>
                       <span className="wrap">{text}</span>
                     </h1>
@@ -91,8 +89,7 @@ function Banner() {
                       <ArrowRightCircle size={25} />
                     </button>
                   </div>
-                )}
-              </TrackVisibility>
+               
             </Col>
             <Col xs={12} md={6} xl={5}>
               <img src={headerImg} alt="Header" />
@@ -100,7 +97,7 @@ function Banner() {
           </Row>
         </Container>
       </section>
-    </>
+    </ div>
   );
 }
 
