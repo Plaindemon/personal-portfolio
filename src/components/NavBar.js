@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom"
 import logo from "../assets/img/logo2.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/github-icon.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import navIcon4 from "../assets/img/mail-icon.svg";
 import navIcon5 from "../assets/img/phone-solid.svg";
+import "../App.css";
 
 function NavBarComponent() {
     const [activeLink, setActiveLink] = useState('home');
@@ -39,6 +41,7 @@ function NavBarComponent() {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
+            
             <Nav.Link href="/home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
             <Nav.Link href="/about" className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>About me</Nav.Link>
 
