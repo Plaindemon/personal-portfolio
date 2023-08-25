@@ -5,6 +5,13 @@ import projImg2 from "../assets/img/Blog.png";
 import projImg3 from "../assets/img/noname.jpg";
 import projImg4 from "../assets/img/weather-trails.gif";
 import colorSharp2 from "../assets/img/color-sharp2.svg";
+
+import messageApp from "../assets/img/message-app2.jpg";
+import happyPuppy from "../assets/img/happy-puppy.jpg";
+import multiChoice from "../assets/img/multiple-choice.png";
+
+import noteTaker from "../assets/img/note-taker.jpg"
+
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -14,35 +21,41 @@ function Projects() {
       title: "Randonnee",
       description: "Climb with friends!",
       imgUrl: projImg1,
+      appUrl: "https://enigmatic-bayou-07532.herokuapp.com/"
     },
     {
-      title: "Robot Rent",
-      description: "Blog with login and posting capabilities",
-      imgUrl: projImg2,
+      title: "Message App",
+      description: "Sending messages to friends",
+      imgUrl: messageApp,
+      appUrl: "https://routes-project.tech/"
     },
     {
       title: "R-O-U-T-E-S",
       description: "Ski, Snowboard, Run with friends!",
       imgUrl: projImg3,
+      appUrl: "https://shrouded-anchorage-74722.herokuapp.com/"
     },
     
   ];
 
   const projects2 = [
     {
-      title: "Weather Trails",
-      description: "Checks the weather and 5 day forecast and can search National Parks",
-      imgUrl: projImg4,
+      title: "Note Taker",
+      description: "Write notes, save and delete old notes",
+      imgUrl: noteTaker,
+      appUrl: "https://aqueous-chamber-16548.herokuapp.com/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Blog",
+      description: "Blog with multi-user functionality",
       imgUrl: projImg2,
+      appUrl: "https://sleepy-thicket-53058.herokuapp.com/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Happy Puppy Adventures",
+      description: "Dog care website for small business",
+      imgUrl: happyPuppy,
+      appUrl: "https://happypuppyadventures.onrender.com/services"
     },
   ]
 
@@ -53,9 +66,9 @@ function Projects() {
       imgUrl: projImg4,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Multiple Choice Quiz",
+      description: "Small Javascript Multiple choice quiz",
+      imgUrl: multiChoice,
     },
     {
       title: "Business Startup",
