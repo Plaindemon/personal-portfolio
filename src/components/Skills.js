@@ -52,19 +52,19 @@ function Skills() {
               >
                 <div className="item">
                   <img src={meter1} />
-                  <h5>Web Development</h5>
-                </div>
-                <div className="item">
-                  <img src={meter2} />
-                  <h5>Brand Identity</h5>
+                  <h5>JavaScript</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} />
-                  <h5>Logo Design</h5>
+                  <h5>React</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} />
+                  <h5>CSS</h5>
                 </div>
                 <div className="item">
                     <img src={meter1}/>
-                    <h5>Web Development</h5>
+                    <h5>Node.js</h5>
                 </div>
               </Carousel>
             </div>
